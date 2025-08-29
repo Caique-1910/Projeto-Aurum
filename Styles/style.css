@@ -334,18 +334,44 @@ h2 {
 
 .rodape {
     background-color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+    color: var(--branco);
+    height: 40vh;
 }
 
 .rodape-conteudo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+}
+
+.logo-rodape {
+    width: 200px;
 }
 
 .lista-rodape {
     display: flex;
-    justify-content: inline;
-    gap: 20px;
+    gap: 30px;
+    list-style: none;
+}
+
+li a {
     text-decoration: none;
+    color: var(--branco);
+}
+
+.linha-divisoria {
+    height: 1px;
+    background-color: var(--borda-suave);
+    margin-top: 20px;
+}
+
+.direitos {
+    text-align: center;
+    color: var(--texto-suave);
+    font-size: 1em;
+    margin-top: 20px;
 }
