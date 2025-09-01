@@ -100,7 +100,8 @@ input {
     position: absolute;
     right: 5%;
     top: 50%;
-    transform: translateY(-50%); /*Move o elemento para cima metade da sua propria altura*/
+    transform: translateY(-50%);
+    /*Move o elemento para cima metade da sua propria altura*/
 }
 
 .botao-login {
@@ -133,5 +134,44 @@ input {
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
-    display: none; /*Esconde o elemento na tela*/
+    display: none;
+    /*Esconde o elemento na tela*/
+}
+
+.logo-resp{
+    display: none;
+}
+
+/*RESPONSIVO*/
+
+@media (max-width: 900px) {
+    .container-login {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .painel-esquerdo {
+        margin: 0;
+    }
+
+    .descricao {
+        font-size: 1.8em;
+        max-width: 55%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-resp{
+        display: inline;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width: 600px) {
+   input{
+        width: 50%;
+   }
 }

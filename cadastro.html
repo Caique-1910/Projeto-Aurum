@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="Styles/global.css">
+    <link rel="stylesheet" href="Styles/cadastro.css">
+</head>
+
+<body>
+    <header class="banner-cadastro">
+        <div class="textos-banner">
+            <h1 class="titulo-cadastro">
+                Cadastro
+            </h1>
+            <p class="texto-cadastro-banner">
+                Crie uma nova conta de usuario para o Aurum Lab
+            </p>
+        </div>
+        <img src="assets/img/icone-logo.svg" alt="" class="logo">
+    </header>
+
+    <main class="cadastro">
+        <form class="form-cadastro">
+
+            <div class="lado-esquerdo">
+                <label for="name">Nome completo</label>
+                <input type="text" id="name" placeholder="seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="email@email.com" required>
+            </div>
+
+            <div class="lado-direito">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="sua senha" required>
+
+                <label for="senha">Confirmar senha</label>
+                <input type="password" id="verifcacao" placeholder="confirme sua senha" required>
+                <p class="texto-aviso">A senha deve conter letras, numeros e caracteres especiais para maior seguranca
+                </p>
+            </div>
+        </form>
+        
+        <div class="final">
+            <button type="submit" class="botao-cadastro">ENTRAR</button>
+            <a href="login.html" class="volta">Voltar</a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
